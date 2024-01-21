@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="business.png" type="image/x-icon">
   <!-- tailwind and daisyUI -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
@@ -446,14 +447,14 @@
         </div>
 
         <!-- input part -->
-        <div class="flex flex-col space-y-5">
-          <input type="text" placeholder="Your Name" class=" rounded-lg  outline-none w-full lg:w-[600px] bg-base-200 border-none" />
-          <input type="email" placeholder="Your Email" class=" rounded-lg  outline-none w-full lg:w-[600px] bg-base-200 border-none" />
-          <input type="text" placeholder="Subject" class=" rounded-lg  outline-none w-full lg:w-[600px] bg-base-200 border-none" />
+        <div class="flex flex-col space-y-8 p-4 lg:p-0">
+          <input type="text" placeholder="Your Name" class=" rounded-lg text-2xl text-black  border-0 w-full lg:w-[600px] lg:h-16 bg-base-200 " />
+          <input type="email" placeholder="Your Email" class=" rounded-lg  outline-none w-full lg:w-[600px] lg:h-16 bg-base-200 border-none text-2xl text-black" />
+          <input type="text" placeholder="Subject" class=" rounded-lg  outline-none w-full lg:w-[600px] lg:h-16 bg-base-200 border-none text-2xl text-black" />
        
         <!-- lg -->
-        <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg w-full max-w-xs"></textarea>
-        <div class="btn btn-primary"></div>
+        <textarea placeholder="You're Message " class="textarea textarea-lg w-full  lg:w-[600px] lg:h-40 bg-base-200"></textarea>
+        <div class="btn text-white bg-[#B68C5A] hover:bg-white hover:text-black lg:h-20"> Send Message</div>
         </div>
       </div>
 
@@ -461,9 +462,48 @@
 
   </main>
 
-  <footer id="footer">
+  <!-- footer section  -->
 
-
+  <footer class="footer p-10 bg-black text-base-content EB text-white lg:px-64">
+    <nav class="text-slate-300 lg:mr-5">
+      <img src="logo.png" alt="" width="60%">
+      <p>There are many variations of 
+        <br>
+        passages of Lorem Ipsum available, 
+        <br>
+        but the majority have suffered alteration
+        <br>
+         in some form, by injected humour, . </p>
+    </nav> 
+     <div class="flex flex-row lg:flex-row gap-5">
+      <nav class="lg:mr-7">
+        <header class="footer-title text-lg">Useful Links</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Blogs</a>
+      </nav> 
+      <nav class="lg:mr-10">
+        <header class="footer-title text-lg ">Legal</header> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+     </div>
+    <form>
+      <header class="footer-title text-lg">Subscribe</header> 
+      <fieldset class="form-control w-80">
+        <label class="label">
+          <span class="label-text text-white">Subscribe for our <br>
+            latest & Articles. We Won’t <br>
+             Give You Spam Mails</span>
+        </label> 
+        <div class="join w-1/2 lg:w-full">
+        <input class="text-black rounded-s-lg max-w-28 lg:w-full" type="email" placeholder="Your Email">
+          <button class="btn join-item bg-[#B68C5A]"><i class="fa-solid fa-location-arrow text-2xl text-white"></i></button>
+        </div>
+      </fieldset>
+    </form>
   </footer>
 </body>
 
